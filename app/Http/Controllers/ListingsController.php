@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Listing;
 
 class ListingsController extends Controller
@@ -15,6 +16,7 @@ class ListingsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         $listing = Listing::orderBy('created_at','desc')->get();

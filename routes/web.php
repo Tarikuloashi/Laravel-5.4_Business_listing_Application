@@ -15,6 +15,9 @@
 //     return view('welcome');
 // });
 
+Route::get('profile','UserController@profile');
+Route::post('profile','UserController@update_avatar');
+
 Route::get('/','ListingsController@index');
 
 Auth::routes();
